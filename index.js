@@ -24,7 +24,7 @@ const workEnv = [process.env.API_KEY, process.env.SECRET_KEY]
 const run = () => {
     const client = new Spot(...workEnv)
 
-   /* client.newOrder('USDTUAH', 'BUY', 'LIMIT', {
+    /*client.newOrder('USDTUAH', 'BUY', 'LIMIT', {
         price: '10',
         quantity: 1,
         timeInForce: 'GTC'
