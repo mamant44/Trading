@@ -28,41 +28,41 @@ const run = () => {
         price: '10',
         quantity: 1,
         timeInForce: 'GTC'
-    }).then(response => client.logger.log(response.data))
-        .catch(error => client.logger.error(error))*/
+    }).then(response => console.log(response.data))
+        .catch(error => console.log(error))*/
 
     /*client.cancelOrder('USDTUAH', {
         recvWindow: 3000,
         orderId: 723252272
-    }).then(response => client.logger.log(response.data))
-        .catch(error => client.logger.error(error))*/
+    }).then(response => console.log(response.data))
+        .catch(error => console.log(error))*/
 
    /* client.cancelOpenOrders('USDTUAH', {
         orderId: 723252272,
         side: 'BUY'
-    }).then(response => client.logger.log(response.data))
-        .catch(error => client.logger.error(error))*/
+    }).then(response => console.log(response.data))
+        .catch(error => console.log(error))*/
 
     /*client.getOrder('USDTUAH', {
         orderId: 723252272
-    }).then(response => client.logger.log(response.data))
-        .catch(error => client.logger.error(error))*/
+    }).then(response => console.log(response.data))
+        .catch(error => console.log(error))*/
 
     /*client.openOrders({})
-        .then(response => client.logger.log(response.data))
-        .catch(error => client.logger.error(error))*/
+        .then(response => console.log(response.data))
+        .catch(error => console.log(error))*/
 
     /*client.allOrders('USDTUAH', {
-    }).then(response => client.logger.log(response.data))
-        .catch(error => client.logger.error(error))*/
+    }).then(response => console.log(response.data))
+        .catch(error => console.log(error))*/
 
     /*client.allOrders('USDTUAH', {
-    }).then(response => client.logger.log(response.data))
-        .catch(error => client.logger.error(error))*/
+    }).then(response => console.log(response.data))
+        .catch(error => console.log(error))*/
 
     client.account()
-        .then(response => client.logger.log(response.data))
-        .catch(error => client.logger.error(error.message))
+        .then(response => console.log(response.data))
+        .catch(error => console.log(error.message))
 
     /*client.depositWithdrawalHistory(0)
         .then(response => console.log(response.data))
