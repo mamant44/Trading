@@ -29,12 +29,12 @@ const createBuyOrder = ({quantity, client}) => {
 }
 
 let currentPrice = DEFAULT_CURRENT_PRICE;
-let currentStateOrder;
+/*let currentStateOrder;*/
 
 const client = new Spot(...workEnv)
 
 const trade = () => {
-   /* const callbacks = {
+    const callbacks = {
         open: () => console.log('Connected with Websocket server'),
         close: () => console.log('Disconnected with Websocket server'),
         message: data => {
@@ -43,7 +43,7 @@ const trade = () => {
         }
     }
 
-    client.aggTradeWS(USDT_UAH, callbacks)*/
+    client.aggTradeWS(USDT_UAH, callbacks)
 
     setInterval(() => {
 
@@ -59,15 +59,15 @@ const trade = () => {
 
         client.tradeWS(USDT_UAH, callbacks)
 
-        /*if (currentPrice <= USDT_UAH_BUY_PRICE &&) {
+        if (currentPrice <= USDT_UAH_BUY_PRICE) {
                 createBuyOrder({quantity: TRADE_USDT_QUANTITY, client});
                 console.log("buy order created", currentPrice);
         }
 
-        if (currentPrice >= USDT_UAH_SELL_PRICE && ) {
+        if (currentPrice >= USDT_UAH_SELL_PRICE) {
                 createSellOrder({quantity: TRADE_USDT_QUANTITY, client});
                 console.log("sell order created", currentPrice);
-        }*/
+        }
     }, 1)
 }
 

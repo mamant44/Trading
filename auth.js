@@ -1,9 +1,6 @@
 import {useCallback, useState} from "react";
-import {useLocation} from "react-router";
-import {useNavigate, Outlet} from "react-router-dom";
 import {FormControl, Input} from "@mui/material";
 import axios from "axios";
-import {API_KEY, SECRET_KEY} from "./constants";
 
 const styles = {
     form: {

@@ -1,5 +1,5 @@
 require("dotenv").config()
-const { Spot } = require('@binance/connector')
+const {Spot} = require('@binance/connector')
 
 const SALE_CONFIG = {
     symbol: 'USDTUAH',
@@ -31,19 +31,19 @@ const run = () => {
     }).then(response => client.logger.log(response.data))
         .catch(error => client.logger.error(error))*/
 
-    /*client.cancelOrder('1INCHUSDT', {
+    /*client.cancelOrder('USDTUAH', {
         recvWindow: 3000,
         orderId: 723252272
     }).then(response => client.logger.log(response.data))
         .catch(error => client.logger.error(error))*/
 
-   /* client.cancelOpenOrders('1INCHUSDT', {
+   /* client.cancelOpenOrders('USDTUAH', {
         orderId: 723252272,
         side: 'BUY'
     }).then(response => client.logger.log(response.data))
         .catch(error => client.logger.error(error))*/
 
-    /*client.getOrder('1INCHUSDT', {
+    /*client.getOrder('USDTUAH', {
         orderId: 723252272
     }).then(response => client.logger.log(response.data))
         .catch(error => client.logger.error(error))*/
@@ -56,7 +56,7 @@ const run = () => {
     }).then(response => client.logger.log(response.data))
         .catch(error => client.logger.error(error))*/
 
-    /*client.allOrders('1INCHUSDT', {
+    /*client.allOrders('USDTUAH', {
     }).then(response => client.logger.log(response.data))
         .catch(error => client.logger.error(error))*/
 

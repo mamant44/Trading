@@ -4,8 +4,8 @@ const {Spot} = require('@binance/connector');
 const workEnv = [process.env.API_KEY, process.env.SECRET_KEY]
 
 const TRADE_USDT_QUANTITY = 11;
-const USDT_UAH_SELL_PRICE = 40.3;
-const USDT_UAH_BUY_PRICE = 40.15;
+const USDT_UAH_SELL_PRICE = 40.28;
+const USDT_UAH_BUY_PRICE = 40.10;
 const DEFAULT_CURRENT_PRICE = 0;
 const USDT_UAH = 'USDTUAH';
 
